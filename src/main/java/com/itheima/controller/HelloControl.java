@@ -34,6 +34,9 @@ public class HelloControl {
     @Autowired
     private Environment env;
 
+    @Autowired
+    private person person;
+
 
     @RequestMapping("/getCity")
     public String getCity(){
@@ -41,6 +44,10 @@ public class HelloControl {
 
         System.out.println("----------------------------");
         System.out.println(env.getProperty("address[2]"));
+
+        System.out.println("11111111111111111111111111111");
+
+        System.out.println(person);
         return city;
     }
 
