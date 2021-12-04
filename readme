@@ -1,0 +1,21 @@
+spring boot 学习笔记
+
+配置文件分类
+    spring boot 是基于约定的，很多配置都配有默认值。可以通过application.properties或者application.yml 进行配置。加载顺序：application.properties > application.yml >application.yaml
+
+    properties:(键值对的形式）
+        server.port=8080
+    yml:(缩进的形式）
+        server:
+            port:8080(必须要有空格）
+
+yaml:
+    是一种直观的能够被电脑识别的数据序列化格式，并且容易被人阅读，容易和脚本语言交互的.yml是以数据为核心的，比传统的xml更简洁
+
+读取配置文件内容
+
+profile
+
+内部配置加载顺序
+
+外部配置加载顺序
