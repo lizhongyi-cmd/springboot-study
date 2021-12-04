@@ -1,2 +1,12 @@
 server:
   port: 8082
+
+name: zhangSan
+person:
+  name: liSi
+  age: 18
+
+address:
+  - beijing
+  - shanghai
+  - tianjin

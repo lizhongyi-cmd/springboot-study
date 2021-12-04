@@ -11,8 +11,46 @@ spring boot 学习笔记
 
 yaml:
     是一种直观的能够被电脑识别的数据序列化格式，并且容易被人阅读，容易和脚本语言交互的.yml是以数据为核心的，比传统的xml更简洁
+    基本语法：
+        大小写敏感
+        数据值前面必须有空格，作为分割符
+        使用缩进表示层级关系
+        缩进时不允许使用tab键，只允许使用空格（idea环境下按tab会自动转换成空格）
+        缩进的空格数目不重要，只要相同层级的元素左侧对齐即可
+        #表示注释掉整行
+    数据格式：
+        对象（map）：键值对的集合
+            person:
+                name: zhangSan
+            行内写法
+            person: {name: zhangSan}
+        数组：一组按照次序排列的值
+            address:
+                - beijing
+                - shanghai
+                - tianjin
+            行内写法
+            address: [beijing,shanghai]
+        纯量（常量）:单个的不可再分割的数值
+            msg1: 'hello \n world' 单引号忽略转义字符
+            msg2: "hello \n world" 双引号识别转义字符
 
-读取配置文件内容
+
+    参数引用：
+        name: zhangSan
+        person:
+            name: ${name}
+
+读取配置文件内容:
+    1. @Value
+    2. Environment
+    3. @ConfigurationProperties
+
+
+
+
+
+
 
 profile
 
