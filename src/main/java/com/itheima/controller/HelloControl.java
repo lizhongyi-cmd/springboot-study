@@ -16,20 +16,20 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class HelloControl {
 
-    @Value("${name}")
-    private String name;
-
-    @Value("${person.age}")
-    private int age;
-
-    @Value("${address[2]}")
-    private String city;
-
-    @RequestMapping("/getName")
-    public String getName(){
-        System.out.println(name);
-        return name;
-    }
+//    @Value("${name}")
+//    private String name;
+//
+//    @Value("${person.age}")
+//    private int age;
+//
+//    @Value("${address[2]}")
+//    private String city;
+//
+//    @RequestMapping("/getName")
+//    public String getName(){
+//        System.out.println(name);
+//        return name;
+//    }
 
     @Autowired
     private Environment env;
@@ -38,24 +38,24 @@ public class HelloControl {
     private person person;
 
 
-    @RequestMapping("/getCity")
-    public String getCity(){
-        System.out.println(city);
+//    @RequestMapping("/getCity")
+//    public String getCity(){
+////        System.out.println(city);
+//
+//        System.out.println("----------------------------");
+//        System.out.println(env.getProperty("address[2]"));
+//
+//        System.out.println("11111111111111111111111111111");
+//
+//        System.out.println(person);
+//        return city;
+//    }
 
-        System.out.println("----------------------------");
-        System.out.println(env.getProperty("address[2]"));
-
-        System.out.println("11111111111111111111111111111");
-
-        System.out.println(person);
-        return city;
-    }
-
-    @RequestMapping("/getAge")
-    public int getAge(){
-        System.out.println(age);
-        return age;
-    }
+//    @RequestMapping("/getAge")
+//    public int getAge(){
+//        System.out.println(age);
+//        return age;
+//    }
 
     @RequestMapping("/hello")
     public String hello(){

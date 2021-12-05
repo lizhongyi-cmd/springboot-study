@@ -2,6 +2,7 @@
 server:
   port: 8082
 
+
 name: zhangSan
 person:
   name: liSi
@@ -14,6 +15,23 @@ address:
 
 spring:
   profiles: pro
+  #配置redis
+  redis:
+    host: 127.0.0.1 #redis的主机ip
+    port: 6379
+  datasource:
+    url: jdbc:mysql:///springboot
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml #mapper映射文件路径
+  #config-location: #指定mybatis的核心配置文件
+  #type-aliases-package: #指定包的别名
+
+
 ---
 server:
   port: 8085

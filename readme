@@ -81,3 +81,15 @@ profile(用来完成在不同环境下，配置动态切换功能的)
 
     指定外部文件的路径
         java -jar ./xxx.jar --spring.config.location=e://application.properties(默认会读取和jar包同级的配置文件）
+
+
+整合其他框架
+    整合Junit来进行单元测试
+
+    整合redis
+
+    整合mybatis
+
+
+
+
