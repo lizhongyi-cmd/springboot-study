@@ -72,9 +72,12 @@ profile(用来完成在不同环境下，配置动态切换功能的)
         3. classpath的/config目录
         4. classpath的根目录
         加载顺序为上面的排列顺序，高优先级配置的属性会生效
-
-
-
-
+        修改项目的访问路径，默认值为/
+            server.servlet.context-path=/hello
 
 外部配置加载顺序
+    使用命令行的格式：
+        java -jar ./xxx.jar --server.port=8082 --server.servlet.context-path=/hehe
+
+    指定外部文件的路径
+        java -jar ./xxx.jar --spring.config.location=e://application.properties(默认会读取和jar包同级的配置文件）
