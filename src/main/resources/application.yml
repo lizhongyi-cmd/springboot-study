@@ -1,3 +1,4 @@
+---
 server:
   port: 8082
 
@@ -10,3 +11,22 @@ address:
   - beijing
   - shanghai
   - tianjin
+
+spring:
+  profiles: pro
+---
+server:
+  port: 8085
+spring:
+  profiles: dev
+---
+server:
+  port: 8084
+spring:
+  profiles: test
+
+---
+#激活方式
+spring:
+  profiles:
+    activate: pro
