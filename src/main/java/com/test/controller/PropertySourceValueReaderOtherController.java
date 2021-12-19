@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 //在此处设置使用哪个配置文件
-@PropertySource({"test.properties","ok.properties"})
+//@PropertySource({"test.properties","ok.properties"})
 public class PropertySourceValueReaderOtherController {
     @Value("${my.msg}")
     private String mymsg;
