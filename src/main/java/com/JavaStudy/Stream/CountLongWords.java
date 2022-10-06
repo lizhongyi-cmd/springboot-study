@@ -32,8 +32,4 @@ public class CountLongWords {
 
         Stream<Double> randoms = Stream.generate(Math::random).limit(10);
     }
-    //test git
-
-
-
 }
